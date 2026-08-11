@@ -88,6 +88,7 @@
       letter-spacing: -0.04em;
     }
 
+    .header-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: flex-end; }
     .header-link {
       color: var(--muted);
       font-size: 0.88rem;
@@ -202,7 +203,7 @@
 
     .link-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
     }
 
@@ -333,7 +334,10 @@
       <span class="brand-mark" aria-hidden="true">GGI</span>
       <span class="brand-name">Gros Geek Industrie</span>
     </a>
-    <a class="header-link" href="/gros-geek-industrie/privacy-policy/">Confidentialité</a>
+    <nav class="header-nav" aria-label="Informations légales">
+      <a class="header-link" href="/gros-geek-industrie/privacy-policy/">Confidentialité</a>
+      <a class="header-link" href="/gros-geek-industrie/terms-of-service/">Conditions d’utilisation</a>
+    </nav>
   </header>
 
   <main>
@@ -380,6 +384,15 @@
           <span class="card-content">
             <h3>Confidentialité</h3>
             <p>Consultez la politique de confidentialité de Gros Geek Industrie Publisher.</p>
+          </span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="link-card" href="/gros-geek-industrie/terms-of-service/">
+          <span class="card-number">04 · INFORMATIONS</span>
+          <span class="card-content">
+            <h3>Conditions d’utilisation</h3>
+            <p>Consultez les conditions d’utilisation de Gros Geek Industrie Publisher.</p>
           </span>
           <span class="card-arrow" aria-hidden="true">→</span>
         </a>
